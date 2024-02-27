@@ -696,43 +696,39 @@ $(window).bind('load', function () {
     }, 1000);
 });
 
-// A marker with a with a URL pointing to a PNG.
-const rawhideLogo = document.createElement("img");
 
-rawhideLogo.src =
-  "../assets/images/icon.png";
-
-const beachFlagMarkerView = new AdvancedMarkerElement({
-  map,
-  position: { lat: 32.36593082365828, lng: -97.40349262827615 },
-  content: rawhideLogo,
-  title: "Rawhide Rustic",
-});
 
 // Initialize and add the map
 let map;
 
 async function initMap() {
-  // The location of Uluru
+  // The location of Rawhide Rustic
   const position = { lat: 32.36593082365828, lng: -97.40349262827615 };
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-  // The map, centered at Uluru
+  // The map, centered at Rawhide Rustic
   map = new Map(document.getElementById("map"), {
     zoom: 15,
     center: position,
     mapId: "DEMO_MAP_ID",
   });
 
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerElement({
-    map: map,
-    position: position,
-    title: "Rawhide Rustic",
-  });
+  // The marker, positioned at Rawhide Rustic
+// A marker with a with a URL pointing to a PNG.
+const rawhideLogo = document.createElement("img");
+
+rawhideLogo.src =
+  "./assets/images/icon.png";
+
+const rawhideLogoView = new AdvancedMarkerElement({
+  map,
+  position: { lat: 32.36593082365828, lng: -97.40349262827615 },
+  content: rawhideLogo,
+  title: "Rawhide Rustic",
+});
 }
 
 initMap();
