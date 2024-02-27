@@ -39,7 +39,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </head>
 
 <body>
@@ -527,7 +527,28 @@
     <script src="js/jquery.ion.rangeSlider.js"></script>
     <script src="js/jquery.isotope.pkgd.js"></script>
     <script src="js/main.js"></script>
-    
+    <script>
+        // Initialize and add the map
+let map;
+
+async function initMap() {
+  // The location of Rawhide Rustic
+  const position = { lat: 32.36593082365828, lng: -97.40349262827615 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Rawhide Rustic
+  map = new Map(document.getElementById("map"), {
+    zoom: 16,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
+}
+
+initMap();
+    </script>
 
 </body>
 
