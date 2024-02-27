@@ -715,20 +715,6 @@ async function initMap() {
     center: position,
     mapId: "DEMO_MAP_ID",
   });
-
-  // The marker, positioned at Rawhide Rustic
-// A marker with a with a URL pointing to a PNG.
-const rawhideLogo = document.createElement("img");
-
-rawhideLogo.src =
-  "./assets/images/icon.png";
-
-const rawhideLogoView = new AdvancedMarkerElement({
-  map,
-  position: { lat: 32.36593082365828, lng: -97.40349262827615 },
-  content: rawhideLogo,
-  title: "Rawhide Rustic",
-});
 }
 
 initMap();
