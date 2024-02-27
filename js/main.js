@@ -700,7 +700,7 @@ $(window).bind('load', function () {
 const rawhideLogo = document.createElement("img");
 
 rawhideLogo.src =
-  "../assets/images/beachflag.png";
+  "../assets/images/icon.png";
 
 const beachFlagMarkerView = new AdvancedMarkerElement({
   map,
