@@ -703,7 +703,7 @@ let map;
 
 async function initMap() {
   // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
+  const position = { lat: 32.36593082365828, lng: -97.40349262827615 };
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
@@ -711,7 +711,7 @@ async function initMap() {
 
   // The map, centered at Uluru
   map = new Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 12,
     center: position,
     mapId: "DEMO_MAP_ID",
   });
@@ -720,7 +720,7 @@ async function initMap() {
   const marker = new AdvancedMarkerElement({
     map: map,
     position: position,
-    title: "Uluru",
+    title: "Rawhide Rustic",
   });
 }
 
