@@ -1112,7 +1112,7 @@ nav .navigation-main .navbar-dropdown .navbar-box ul > li:last-child > a {
     }
     nav .navigation-main .floating-menu {
         position: absolute;
-        padding: 0 10px;
+        padding: 0 5px;
         z-index: 9999;
         width: 100%;
         top: 0;
