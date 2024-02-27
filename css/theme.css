@@ -1587,7 +1587,7 @@ nav .cart-wrapper {
     right: 0;
     padding: 7.5px;
     max-width: 500px;
-    background: #eeeeee;
+    background: #a78002;
     border: 1px solid #ffbb00;
     overflow: hidden;
 }
@@ -2182,7 +2182,7 @@ nav .cart-wrapper.open {
 @media (min-width: 992px) {
     .filters.filters-top {
         padding-top: 40px;
-        background-color: #eeeeee;
+        background-color: #a78002;
     }
     .filters.filters-top .filter-content {
         position: absolute;
@@ -2273,7 +2273,7 @@ nav .cart-wrapper.open {
     ----------------------------------
 */
 .products {
-    background-color: #eeeeee;
+    background-color:#a78002;
 }
 
 .products .box-filters {
@@ -2899,7 +2899,7 @@ nav .cart-wrapper.open {
 */
 .blog {
     position: relative;
-    background-color: #eeeeee;
+    background-color: #a78002;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -3822,7 +3822,7 @@ nav .cart-wrapper.open {
 }
 
 .comments .comment-block > .comment-block {
-    background-color: #eeeeee;
+    background-color: #a78002;
     border-top: 1px solid rgba(221, 221, 221, 0.5);
     padding-bottom: 20px;
     padding-top: 20px;
@@ -4485,7 +4485,7 @@ nav .cart-wrapper.open {
     ----------------------------------
 */
 .checkout {
-    background-color: #eeeeee;
+    background-color: #a78002;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -4869,7 +4869,7 @@ nav .cart-wrapper.open {
     ----------------------------------
 */
 .login-wrapper.login-wrapper-page {
-    background-color: #eeeeee;
+    background-color: #a78002;
 }
 
 .login-wrapper .white-block {
@@ -4898,7 +4898,7 @@ nav .cart-wrapper.open {
     ----------------------------------
 */
 .contact {
-    background-color: #eeeeee;
+    background-color: #a78002;
     padding: 0 0 80px 0;
 }
 
@@ -5338,7 +5338,7 @@ nav .cart-wrapper.open {
     ----------------------------------
 */
 .history {
-    background-color: #eeeeee;
+    background-color: ;
 }
 
 .history .title {
@@ -5445,7 +5445,7 @@ nav .cart-wrapper.open {
     ----------------------------------
 */
 .intro {
-    background-color: #eeeeee;
+    background-color: #a78002;
     padding: 30px 0;
 }
 
@@ -5994,7 +5994,7 @@ footer .footer-social li a {
 */
 .info-icons {
     padding: 60px 0;
-    background-color: #eeeeee;
+    background-color: #a78002;
 }
 
 .info-icons.info-icons-frontpage {
