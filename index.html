@@ -28,6 +28,9 @@
     <link rel="stylesheet" media="all" href="css/owl.carousel.css" />
     <link rel="stylesheet" media="all" href="css/ion-range-slider.css" />
     <link rel="stylesheet" media="all" href="css/theme.css" />
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <link rel="stylesheet" href="./style.css"/>
 
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&amp;subset=latin-ext" rel="stylesheet">
@@ -140,7 +143,7 @@
         </section>
 
 
-        <!-- ========================  Products widget ======================== -->
+        <!-- ========================  Products widget from Abante ======================== -->
         <script src="https://rawhiderustic.com/abante/index.php?rt=r/embed/js" type="text/javascript"></script>
         <ul style="display:none;" class="abantecart-widget-container" data-url="https://rawhiderustic.com/abante/" data-css-url="https://rawhiderustic.com/abante/extensions/bootstrap5/storefront/view/bootstrap5/css/embed.css" data-language="en" data-currency="USD">
             <li id="abc_170910489359171" class="abantecart_category" data-category-id="71" data-language="en" data-currency="USD">
@@ -242,12 +245,9 @@
 
             <!-- === Google map === -->
 
-            <div id="map"></div>
-
-            <!-- prettier-ignore -->
-            <script async
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXBn3wKf7gASOONnfmP7KD7GasOqG2pqw&loading=async&callback=initMap">
-        </script>
+            <gmp-map center="32.36571502685547,-97.40353393554688" zoom="14" map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker position="32.36571502685547,-97.40353393554688" title="My location"></gmp-advanced-marker>
+              </gmp-map>
             <div class="container">
 
                 <div class="row">
