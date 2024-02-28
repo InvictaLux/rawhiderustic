@@ -39,7 +39,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </head>
 
 <body>
@@ -96,7 +96,7 @@
                 <div class="item" style="background-image:url(assets/images/gallery-2.jpg)">
                     <div class="box">
                         <div class="container text-center">
-                            <h2 class="title animated h1" data-animation="fadeInDown">Rollin, rollin, rollin!</h2>
+                            <h2 class="title animated h1" data-animation="fadeInDown">ROLLIN ROLLIN ROLLIN</h2>
                             <div class="animated" data-animation="fadeInUp">
                                 Rawhide Rustic <br />The best kept secret of Cleburne, TX!
                             </div>
@@ -109,7 +109,7 @@
                 <div class="item" style="background-image:url(assets/images/gallery-1.jpg)">
                     <div class="box">
                         <div class="container text-center">
-                            <h2 class="title animated h1" data-animation="fadeInDown">Rustic themed furniture</h2>
+                            <h2 class="title animated h1" data-animation="fadeInDown">Rustic Themed Furniture</h2>
                             <div class="animated" data-animation="fadeInUp">Old world style, unique, hand crafted</div>
                             <div class="animated" data-animation="fadeInUp">and made to last a lifetime. </div>
                             <div class="animated" data-animation="fadeInUp">
@@ -130,7 +130,7 @@
                                 We have bull horns and porch swings
                             </div>
                             <div class="desc animated" data-animation="fadeInUp">
-                                and country home furnishings!
+                                and rustic home furnishings!
                             </div>
                         </div>
                     </div>
@@ -342,7 +342,28 @@
     <script src="js/jquery.ion.rangeSlider.js"></script>
     <script src="js/jquery.isotope.pkgd.js"></script>
     <script src="js/main.js"></script>
-    
+    <script>
+        // Initialize and add the map
+let map;
+
+async function initMap() {
+  // The location of Rawhide Rustic
+  const position = { lat: 32.36593082365828, lng: -97.40349262827615 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Rawhide Rustic
+  map = new Map(document.getElementById("map"), {
+    zoom: 16,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
+}
+
+initMap();
+    </script>
 
 </body>
 

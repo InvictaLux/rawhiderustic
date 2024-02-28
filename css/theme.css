@@ -182,6 +182,7 @@ h1, .h1 {
         font-size: 24px;
         margin-top: 26.66667px;
         margin-bottom: 26.66667px;
+        text-shadow: 0 0 50px 15px #e0b048;
     }
 }
 
@@ -189,6 +190,7 @@ h2, .h2 {
     font-size: 21px;
     margin-top: 15px;
     margin-bottom: 15px;
+    text-shadow: 0 0 50px 15px #e0b048;
 }
 
 @media (min-width: 992px) {
@@ -306,7 +308,7 @@ input, textarea, select {
 }
 
 .btn.btn-main {
-    background-color: #ffbb00;
+    background-color: #bb8a02;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -561,9 +563,10 @@ input, textarea, select {
 
 .checkbox input[type="checkbox"]:checked + label:before,
 .checkbox input[type="radio"]:checked + label:before {
-    background: #ffbb00;
+    background: #bb8a02;
     color: white;
-    border-color: #ffbb00;
+    border-color: #bb8a02;
+    ;
     text-align: center;
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);
@@ -671,7 +674,7 @@ header .text p:last-child {
 */
 .main-header {
     padding-top: 128px;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
     background-color: #3a3d45;
     background-size: cover;
     background-position: center;
@@ -690,7 +693,7 @@ header .text p:last-child {
         padding-top: 200px;
     }
     .main-header.main-header-blog {
-        padding-bottom: 100px;
+        padding-bottom: 200px;
     }
 }
 
@@ -1784,7 +1787,7 @@ nav .cart-wrapper.open {
     position: absolute;
     width: 100%;
     color: #fff;
-    top: 80%;
+    top: 30%;
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
@@ -1795,7 +1798,7 @@ nav .cart-wrapper.open {
 
 .header-content .item .title {
     color: white;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     text-transform: none;
 }
 
