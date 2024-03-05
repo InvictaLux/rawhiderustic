@@ -28,6 +28,9 @@
     <link rel="stylesheet" media="all" href="css/owl.carousel.css" />
     <link rel="stylesheet" media="all" href="css/ion-range-slider.css" />
     <link rel="stylesheet" media="all" href="css/theme.css" />
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <link rel="stylesheet" href="./style.css"/>
 
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&amp;subset=latin-ext" rel="stylesheet">
@@ -140,281 +143,97 @@
         </section>
 
 
-        <!-- ========================  Products widget ======================== -->
-
-        <section id="page-products" class="products">
-
-            <div class="container">
-
-                <!-- === header title === -->
-
-                <header>
-                    <div class="row">
-                        <div class="col-md-offset-2 col-md-8 text-center">
-                            <h2 class="title">Our Furniture</h2>
-                            <div class="text">
-                                <p>Check out our hand picked collections</p>
-                            </div>
-
-                            <!-- === box filters === -->
-
-                            <div id="box-filters" class="box-filters">
-
-                                <figure data-filter=".sofa">
-                                    <figcaption>
-                                        <i class="f-icon f-icon-sofa"></i>
-                                        <span>Sofa</span>
-                                    </figcaption>
-                                </figure>
-
-                                <figure data-filter=".armchair">
-                                    <figcaption>
-                                        <i class="f-icon f-icon-armchair"></i>
-                                        <span>Armchair</span>
-                                    </figcaption>
-                                </figure>
-
-                                <figure data-filter=".chair">
-                                    <figcaption>
-                                        <i class="f-icon f-icon-chair"></i>
-                                        <span>Chair</span>
-                                    </figcaption>
-                                </figure>
-
-                                <figure data-filter=".bedroom">
-                                    <figcaption>
-                                        <i class="f-icon f-icon-bedroom"></i>
-                                        <span>Beds</span>
-                                    </figcaption>
-                                </figure>
-
-                            </div> <!--/box-filters-->
-
-                        </div>
-                    </div> <!--/row-->
-                </header>
-
-                <div id="box-filters-results" class="row">
-
-                    <!-- === product-item === -->
-
-                    <div class="col-xs-6 col-sm-4 item sofa">
-                        <article>
-                            <div class="figure-grid">
-                                <div class="image">
-                                    <a href="#productid1" class="mfp-open">
-                                        <img src="assets/images/product-1.png" alt="" width="360" />
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title h4"><a href="product.html">Green corner</a></h2>
-                                    <sub>$ 1499,-</sub>
-                                    <sup>$ 1099,-</sup>
-                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- === product-item === -->
-
-                    <div class="col-xs-6 col-sm-4 item armchair">
-                        <article>
-                            <div class="figure-grid">
-                                <div class="image">
-                                    <a href="#productid1" class="mfp-open">
-                                        <img src="assets/images/product-2.png" alt="" width="360" />
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title h4"><a href="product.html">Laura</a></h2>
-                                    <sub>$ 3999,-</sub>
-                                    <sup>$ 3499,-</sup>
-                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- === product-item === -->
-
-                    <div class="col-xs-6 col-sm-4 item sofa armchair">
-                        <article>
-                            <div class="figure-grid">
-                                <span class="label label-warning">New</span>
-                                <div class="image">
-                                    <a href="#productid1" class="mfp-open">
-                                        <img src="assets/images/product-3.png" alt="" width="360" />
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title h4"><a href="product.html">Nude</a></h2>
-                                    <sup>$ 2999,-</sup>
-                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- === product-item === -->
-
-                    <div class="col-xs-6 col-sm-4 item armchair">
-                        <article>
-                            <div class="figure-grid">
-                                <div class="image">
-                                    <a href="#productid1" class="mfp-open">
-                                        <img src="assets/images/product-4.png" alt="" width="360" />
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title h4"><a href="product.html">Aurora</a></h2>
-                                    <sup>$ 299,-</sup>
-                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- === product-item === -->
-
-                    <div class="col-xs-6 col-sm-4 item bedroom">
-                        <article>
-                            <div class="figure-grid">
-                                <span class="label label-info">-50%</span>
-                                <div class="image">
-                                    <a href="#productid1" class="mfp-open">
-                                        <img src="assets/images/product-5.png" alt="" width="360" />
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title h4"><a href="product.html">Dining set</a></h2>
-                                    <sub>$ 1999,-</sub>
-                                    <sup>$ 1499,-</sup>
-                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- === product-item === -->
-
-                    <div class="col-xs-6 col-sm-4 item sofa">
-                        <article>
-                            <div class="figure-grid">
-                                <div class="image">
-                                    <a href="#productid1" class="mfp-open">
-                                        <img src="assets/images/product-6.png" alt="" width="360" />
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title h4"><a href="product.html">Seat chair</a></h2>
-                                    <sup>$ 896,-</sup>
-                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- === product-item === -->
-
-                    <div class="col-xs-6 col-sm-4 item bedroom">
-                        <article>
-                            <div class="figure-grid">
-                                <span class="label label-info">-50%</span>
-                                <div class="image">
-                                    <a href="#productid1" class="mfp-open">
-                                        <img src="assets/images/product-5.png" alt="" width="360" />
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title h4"><a href="product.html">Dining set</a></h2>
-                                    <sub>$ 1999,-</sub>
-                                    <sup>$ 1499,-</sup>
-                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- === product-item === -->
-
-                    <div class="col-xs-6 col-sm-4 item chair">
-                        <article>
-                            <div class="figure-grid">
-                                <div class="image">
-                                    <a href="#productid1" class="mfp-open">
-                                        <img src="assets/images/product-2.png" alt="" width="360" />
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title h4"><a href="product.html">Seat chair</a></h2>
-                                    <sup>$ 896,-</sup>
-                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- === product-item === -->
-
-                    <div class="col-xs-6 col-sm-4 item sofa chair">
-
-                        <article>
-                            <div class="figure-grid">
-                                <div class="image">
-                                    <a href="#productid1" class="mfp-open">
-                                        <img src="assets/images/product-1.png" alt="" width="360" />
-                                    </a>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title h4"><a href="product.html">Green corner</a></h2>
-                                    <sub>$ 1499,-</sub>
-                                    <sup>$ 1099,-</sup>
-                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                </div> <!--/row-->
-                <!-- ========================  Product info popup - quick view ======================== -->
-
-                <div class="popup-main mfp-hide" id="productid1">
-
-                    <!-- === product popup === -->
-
-                    <div class="product">
-
-                        <!-- === popup-title === -->
-
-                        <div class="popup-title">
-                            <div class="h1 title">Laura <small>product category</small></div>
-                        </div>
-
-                        <!-- === product gallery === -->
-
-                        <div class="owl-product-gallery">
-                            <img src="assets/images/product-1.png" alt="" width="640" />
-                            <img src="assets/images/product-2.png" alt="" width="640" />
-                            <img src="assets/images/product-3.png" alt="" width="640" />
-                            <img src="assets/images/product-4.png" alt="" width="640" />
-                        </div>
-
-                        <!-- === product-popup-footer === -->
-
-                        <div class="popup-table">
-                            <div class="popup-cell">
-                                <div class="price price-single">
-                                    <span class="h3">$ 1999,00 <small>$ 2999,00</small></span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> <!--/product-->
-                </div> <!--popup-main-->
-            </div> <!--/container-->
-        </section>
-
+        <!-- ========================  Products widget from Abante ======================== -->
+    <section id="Products" class="contact contact-single">
+        <script src="https://rawhiderustic.com/abante/index.php?rt=r/embed/js" type="text/javascript"></script>
+        <ul style="display:none;" class="abantecart-widget-container" data-url="https://rawhiderustic.com/abante/" data-css-url="https://rawhiderustic.com/abante/extensions/bootstrap5/storefront/view/bootstrap5/css/embed.css" data-language="en" data-currency="USD">
+            <li id="abc_170910489359171" class="abantecart_category" data-category-id="71" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359172" class="abantecart_category" data-category-id="72" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359173" class="abantecart_category" data-category-id="73" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359174" class="abantecart_category" data-category-id="74" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359175" class="abantecart_category" data-category-id="75" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359176" class="abantecart_category" data-category-id="76" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359177" class="abantecart_category" data-category-id="77" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359178" class="abantecart_category" data-category-id="78" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359179" class="abantecart_category" data-category-id="79" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359180" class="abantecart_category" data-category-id="80" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359181" class="abantecart_category" data-category-id="81" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359182" class="abantecart_category" data-category-id="82" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359183" class="abantecart_category" data-category-id="83" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359184" class="abantecart_category" data-category-id="84" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359185" class="abantecart_category" data-category-id="85" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359186" class="abantecart_category" data-category-id="86" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+            <li id="abc_170910489359187" class="abantecart_category" data-category-id="87" data-language="en" data-currency="USD">
+                <span class="abantecart_image"></span>
+                <h3 class="abantecart_name"></h3>
+                <p class="abantecart_products_count"></p>
+            </li>
+        </ul>
+    </section>
         <!-- ========================  Banner ======================== -->
 
 
@@ -426,21 +245,14 @@
         <section id="page-contact" class="contact contact-single">
 
             <!-- === Google map === -->
-
-            <div id="map"></div>
-
-            <!-- prettier-ignore -->
-            <script async
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXBn3wKf7gASOONnfmP7KD7GasOqG2pqw&loading=async&callback=initMap">
-        </script>
+        <div class="map">
+            <gmp-map center="32.36571502685547,-97.40353393554688" zoom="14" map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker position="32.36571502685547,-97.40353393554688" title="My location"></gmp-advanced-marker>
+              </gmp-map> 
             <div class="container">
-
                 <div class="row">
-
                     <div class="col-sm-10 col-sm-offset-1">
-
                         <div class="contact-block">
-
                             <div class="contact-info">
                                 <div class="row">
                                     <div class="col-sm-4">
@@ -481,6 +293,7 @@
                     </div><!--col-sm-8-->
                 </div> <!--/row-->
             </div><!--/container-->
+        </div>   
         </section>
 
 
