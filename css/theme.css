@@ -1786,7 +1786,8 @@ nav .cart-wrapper.open {
 .header-content .item .box {
     position: absolute;
     width: 100%;
-    color: #fff;
+    color: #ffd957;
+    text-shadow: -5px 5px 4px black;
     top: 30%;
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -1798,7 +1799,7 @@ nav .cart-wrapper.open {
 
 .header-content .item .title {
     color: white;
-    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 5px 5px rgb(0 0 0);
     text-transform: none;
 }
 
