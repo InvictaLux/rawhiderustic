@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Mobile Web-app fullscreen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,9 +28,7 @@
     <link rel="stylesheet" media="all" href="css/owl.carousel.css" />
     <link rel="stylesheet" media="all" href="css/ion-range-slider.css" />
     <link rel="stylesheet" media="all" href="css/theme.css" />
-    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
-    </script>
-    <link rel="stylesheet" href="./style.css"/>
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&amp;subset=latin-ext" rel="stylesheet">
@@ -42,7 +40,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="module" src="./js/main.js"></script>
 </head>
 
 <body>
@@ -51,42 +48,42 @@
 
     <div class="wrapper">
 
-        <!-- ======================== Navigation ======================== -->
+<!-- ======================== Navigation ======================== -->
 
-        <nav class="navbar-fixed navbar-single-page">
+<nav class="navbar-fixed navbar-single-page">
 
-            <div class="container">
+    <div class="container">
 
-                <!-- ==========  Top navigation ========== -->
+        <!-- ==========  Top navigation ========== -->
 
-                <div class="navigation navigation-top clearfix">
-                    <ul>
-                        <!--add active class for current page-->
-                        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                        <li><a href="https://www.facebook.com/RawHideRusticFurniture/"><i class="fa fa-facebook"></i></a></li>
-                    </ul>
+        <div class="navigation navigation-top clearfix">
+            <ul>
+                <!--add active class for current page-->
+                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                <li><a href="https://www.facebook.com/RawHideRusticFurniture/"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- ==========  Main navigation ========== -->
+
+        <div class="navigation navigation-main">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="" /></a>
+            <div class="open-menu"><i class="icon icon-menu"></i></div>
+            <div class="floating-menu">
+                <!--mobile toggle menu trigger-->
+                <div class="close-menu-wrapper">
+                    <span class="close-menu"><i class="icon icon-cross"></i></span>
                 </div>
-
-                <!-- ==========  Main navigation ========== -->
-
-                <div class="navigation navigation-main">
-                    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="" /></a>
-                    <div class="open-menu"><i class="icon icon-menu"></i></div>
-                    <div class="floating-menu">
-                        <!--mobile toggle menu trigger-->
-                        <div class="close-menu-wrapper">
-                            <span class="close-menu"><i class="icon icon-cross"></i></span>
-                        </div>
-                        <ul>
-                            <li><a href="#page-home" class="current">Homepage</a></li>
-                            <li><a href="#page-products">Furniture</a></li>
-                            <li><a href="#page-contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-
+                <ul>
+                    <li><a href="#page-home" class="current">Homepage</a></li>
+                    <li><a href="#page-products">Furniture</a></li>
+                    <li><a href="#page-contact">Contact</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+
+    </div>
+</nav>
 
         <!-- ========================  Header content ======================== -->
 
@@ -100,7 +97,7 @@
                     <div class="box">
                         <div class="container text-center">
                             <h2 class="title animated h1" data-animation="fadeInDown">ROLLIN ROLLIN ROLLIN</h2>
-                            <div class="animated" data-animation="fadeInUp">
+                            <div class="desc animated" data-animation="fadeInUp">
                                 Rawhide Rustic <br />The best kept secret of Cleburne, TX!
                             </div>
                         </div>
@@ -113,9 +110,9 @@
                     <div class="box">
                         <div class="container text-center">
                             <h2 class="title animated h1" data-animation="fadeInDown">Rustic Themed Furniture</h2>
-                            <div class="animated" data-animation="fadeInUp">Old world style, unique, hand crafted</div>
-                            <div class="animated" data-animation="fadeInUp">and made to last a lifetime. </div>
-                            <div class="animated" data-animation="fadeInUp">
+                            <div class="desc animated" data-animation="fadeInUp">Old world style, unique, hand crafted</div>
+                            <div class="desc animated" data-animation="fadeInUp">and made to last a lifetime. </div>
+                            <div class="desc animated" data-animation="fadeInUp">
                             </div>
                         </div>
                     </div>
@@ -142,113 +139,304 @@
             </div> <!--/owl-slider-->
         </section>
 
+        <!-- ========================  Products widget ======================== -->
 
-        <!-- ========================  Products widget from Abante ======================== -->
-    <section id="Products" class="contact contact-single">
-        <script src="https://rawhiderustic.com/abante/index.php?rt=r/embed/js" type="text/javascript"></script>
-        <ul style="display:none;" class="abantecart-widget-container" data-url="https://rawhiderustic.com/abante/" data-css-url="https://rawhiderustic.com/abante/extensions/bootstrap5/storefront/view/bootstrap5/css/embed.css" data-language="en" data-currency="USD">
-            <li id="abc_170910489359171" class="abantecart_category" data-category-id="71" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359172" class="abantecart_category" data-category-id="72" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359173" class="abantecart_category" data-category-id="73" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359174" class="abantecart_category" data-category-id="74" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359175" class="abantecart_category" data-category-id="75" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359176" class="abantecart_category" data-category-id="76" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359177" class="abantecart_category" data-category-id="77" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359178" class="abantecart_category" data-category-id="78" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359179" class="abantecart_category" data-category-id="79" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359180" class="abantecart_category" data-category-id="80" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359181" class="abantecart_category" data-category-id="81" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359182" class="abantecart_category" data-category-id="82" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359183" class="abantecart_category" data-category-id="83" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359184" class="abantecart_category" data-category-id="84" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359185" class="abantecart_category" data-category-id="85" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359186" class="abantecart_category" data-category-id="86" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-            <li id="abc_170910489359187" class="abantecart_category" data-category-id="87" data-language="en" data-currency="USD">
-                <span class="abantecart_image"></span>
-                <h3 class="abantecart_name"></h3>
-                <p class="abantecart_products_count"></p>
-            </li>
-        </ul>
-    </section>
+        <section id="page-products" class="products">
+
+            <div class="container">
+
+                <!-- === header title === -->
+
+                <header>
+                    <div class="row">
+                        <div class="col-md-offset-2 col-md-8 text-center">
+                            <h2 class="title">Our products</h2>
+                            <div class="text">
+                                <p>Check out our latest collections</p>
+                            </div>
+
+                            <!-- === box filters === -->
+
+                            <div id="box-filters" class="box-filters">
+
+                                <figure data-filter=".sofa">
+                                    <figcaption>
+                                        <i class="f-icon f-icon-sofa"></i>
+                                        <span>Sofa</span>
+                                    </figcaption>
+                                </figure>
+
+                                <figure data-filter=".armchair">
+                                    <figcaption>
+                                        <i class="f-icon f-icon-armchair"></i>
+                                        <span>Armchair</span>
+                                    </figcaption>
+                                </figure>
+
+                                <figure data-filter=".chair">
+                                    <figcaption>
+                                        <i class="f-icon f-icon-chair"></i>
+                                        <span>Chair</span>
+                                    </figcaption>
+                                </figure>
+
+                                <figure data-filter=".bedroom">
+                                    <figcaption>
+                                        <i class="f-icon f-icon-bedroom"></i>
+                                        <span>Beds</span>
+                                    </figcaption>
+                                </figure>
+
+                            </div> <!--/box-filters-->
+
+                        </div>
+                    </div> <!--/row-->
+                </header>
+
+                <div id="box-filters-results" class="row">
+
+                    <!-- === product-item === -->
+
+                    <div class="col-xs-6 col-sm-4 item sofa">
+                        <article>
+                            <div class="figure-grid">
+                                <div class="image">
+                                    <a href="#productid1" class="mfp-open">
+                                        <img src="assets/images/product-1.png" alt="" width="360" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="product.html">Green corner</a></h2>
+                                    <sub>$ 1499,-</sub>
+                                    <sup>$ 1099,-</sup>
+                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- === product-item === -->
+
+                    <div class="col-xs-6 col-sm-4 item armchair">
+                        <article>
+                            <div class="figure-grid">
+                                <div class="image">
+                                    <a href="#productid1" class="mfp-open">
+                                        <img src="assets/images/product-2.png" alt="" width="360" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="product.html">Laura</a></h2>
+                                    <sub>$ 3999,-</sub>
+                                    <sup>$ 3499,-</sup>
+                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- === product-item === -->
+
+                    <div class="col-xs-6 col-sm-4 item sofa armchair">
+                        <article>
+                            <div class="figure-grid">
+                                <span class="label label-warning">New</span>
+                                <div class="image">
+                                    <a href="#productid1" class="mfp-open">
+                                        <img src="assets/images/product-3.png" alt="" width="360" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="product.html">Nude</a></h2>
+                                    <sup>$ 2999,-</sup>
+                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- === product-item === -->
+
+                    <div class="col-xs-6 col-sm-4 item armchair">
+                        <article>
+                            <div class="figure-grid">
+                                <div class="image">
+                                    <a href="#productid1" class="mfp-open">
+                                        <img src="assets/images/product-4.png" alt="" width="360" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="product.html">Aurora</a></h2>
+                                    <sup>$ 299,-</sup>
+                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- === product-item === -->
+
+                    <div class="col-xs-6 col-sm-4 item bedroom">
+                        <article>
+                            <div class="figure-grid">
+                                <span class="label label-info">-50%</span>
+                                <div class="image">
+                                    <a href="#productid1" class="mfp-open">
+                                        <img src="assets/images/product-5.png" alt="" width="360" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="product.html">Dining set</a></h2>
+                                    <sub>$ 1999,-</sub>
+                                    <sup>$ 1499,-</sup>
+                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- === product-item === -->
+
+                    <div class="col-xs-6 col-sm-4 item sofa">
+                        <article>
+                            <div class="figure-grid">
+                                <div class="image">
+                                    <a href="#productid1" class="mfp-open">
+                                        <img src="assets/images/product-6.png" alt="" width="360" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="product.html">Seat chair</a></h2>
+                                    <sup>$ 896,-</sup>
+                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- === product-item === -->
+
+                    <div class="col-xs-6 col-sm-4 item bedroom">
+                        <article>
+                            <div class="figure-grid">
+                                <span class="label label-info">-50%</span>
+                                <div class="image">
+                                    <a href="#productid1" class="mfp-open">
+                                        <img src="assets/images/product-5.png" alt="" width="360" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="product.html">Dining set</a></h2>
+                                    <sub>$ 1999,-</sub>
+                                    <sup>$ 1499,-</sup>
+                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- === product-item === -->
+
+                    <div class="col-xs-6 col-sm-4 item chair">
+                        <article>
+                            <div class="figure-grid">
+                                <div class="image">
+                                    <a href="#productid1" class="mfp-open">
+                                        <img src="assets/images/product-2.png" alt="" width="360" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="product.html">Seat chair</a></h2>
+                                    <sup>$ 896,-</sup>
+                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- === product-item === -->
+
+                    <div class="col-xs-6 col-sm-4 item sofa chair">
+
+                        <article>
+                            <div class="figure-grid">
+                                <div class="image">
+                                    <a href="#productid1" class="mfp-open">
+                                        <img src="assets/images/product-1.png" alt="" width="360" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="product.html">Green corner</a></h2>
+                                    <sub>$ 1499,-</sub>
+                                    <sup>$ 1099,-</sup>
+                                    <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div> <!--/row-->
+                <!-- ========================  Product info popup - quick view ======================== -->
+
+                <div class="popup-main mfp-hide" id="productid1">
+
+                    <!-- === product popup === -->
+
+                    <div class="product">
+
+                        <!-- === popup-title === -->
+
+                        <div class="popup-title">
+                            <div class="h1 title">Laura <small>product category</small></div>
+                        </div>
+
+                        <!-- === product gallery === -->
+
+                        <div class="owl-product-gallery">
+                            <img src="assets/images/product-1.png" alt="" width="640" />
+                            <img src="assets/images/product-2.png" alt="" width="640" />
+                            <img src="assets/images/product-3.png" alt="" width="640" />
+                            <img src="assets/images/product-4.png" alt="" width="640" />
+                        </div>
+
+                        <!-- === product-popup-footer === -->
+
+                        <div class="popup-table">
+                            <div class="popup-cell">
+                                <div class="price price-single">
+                                    <span class="h3">$ 1999,00 <small>$ 2999,00</small></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!--/product-->
+                </div> <!--popup-main-->
+            </div> <!--/container-->
+        </section>
+
         <!-- ========================  Banner ======================== -->
 
-
         <!-- ========================  Cards ======================== -->
-
 
         <!-- ========================  Contact ======================== -->
 
         <section id="page-contact" class="contact contact-single">
-
-            <!-- === Google map === -->
-        <div class="map">
-            <gmp-map center="32.36571502685547,-97.40353393554688" zoom="14" map-id="DEMO_MAP_ID">
-                <gmp-advanced-marker position="32.36571502685547,-97.40353393554688" title="My location"></gmp-advanced-marker>
-              </gmp-map> 
+                           <!-- === Goolge map === -->
+                           <div id="style-selector-control" class="map-control">
+                            <select id="style-selector" class="selector-control">
+                              <option value="night" selected="selected">Night mode</option>
+                            </select>
+                          </div>
+                          <div id="map"></div>
+                      
+                          <!-- 
+                            The `defer` attribute causes the callback to execute after the full HTML
+                            document has been parsed. For non-blocking uses, avoiding race conditions,
+                            and consistent behavior across browsers, consider loading using Promises.
+                            See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+                            for more information.
+                            -->
+                          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>      
             <div class="container">
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1">
@@ -293,43 +481,43 @@
                     </div><!--col-sm-8-->
                 </div> <!--/row-->
             </div><!--/container-->
-        </div>   
+
         </section>
 
 
         <!-- ================== Footer  ================== -->
 
         <footer>
-            <div class="container">
+          <div class="container">
 
-                <!--footer showroom-->
-                <div class="footer-showroom footer-showroom-single">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h2>Visit our showroom</h2>
-                            <p>424 W Kilpatrick St, Cleburne, TX 76033</p>
-                            <p>Mon - Sat: 10 am - 6 pm &nbsp; &nbsp; | &nbsp; &nbsp; Closed Sunday</p>
-                            <p>Phone: 817-556-9954</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <!--footer links-->
-                        </div>
-                    </div>
-                </div>
+              <!--footer showroom-->
+              <div class="footer-showroom footer-showroom-single">
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <h2>Visit our showroom</h2>
+                          <p>424 W Kilpatrick St, Cleburne, TX 76033</p>
+                          <p>Mon - Sat: 10 am - 6 pm &nbsp; &nbsp; | &nbsp; &nbsp; Closed Sunday</p>
+                          <p>Phone: 817-556-9954</p>
+                      </div>
+                      <div class="col-sm-6">
+                          <!--footer links-->
+                      </div>
+                  </div>
+              </div>
 
-                <!--footer social-->
+              <!--footer social-->
 
-                <div class="footer-social">
-                    <div class="row">
-                        <div class="col-sm-6 links">
-                            <ul>
-                                <li><a href="https://www.facebook.com/RawHideRusticFurniture/"><i class="fa fa-facebook"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+              <div class="footer-social">
+                  <div class="row">
+                      <div class="col-sm-6 links">
+                          <ul>
+                              <li><a href="https://www.facebook.com/RawHideRusticFurniture/"><i class="fa fa-facebook"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
 
     </div> <!--/wrapper-->
     <!--JS files-->
@@ -340,29 +528,479 @@
     <script src="js/jquery.ion.rangeSlider.js"></script>
     <script src="js/jquery.isotope.pkgd.js"></script>
     <script src="js/main.js"></script>
+
     <script>
-        // Initialize and add the map
+        /**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
 let map;
 
-async function initMap() {
-  // The location of Rawhide Rustic
-  const position = { lat: 32.36593082365828, lng: -97.40349262827615 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+function initMap() {
+  // Create the map with no initial style specified.
+  // It therefore has default styling.
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+      lat: 32.3660306,
+      lng: -97.4037501
+    },
+    zoom: 17,
+    mapTypeControl: false,
+  });
 
-  // The map, centered at Rawhide Rustic
-  map = new Map(document.getElementById("map"), {
-    zoom: 16,
-    center: position,
-    mapId: "DEMO_MAP_ID",
+  // Add a style-selector control to the map.
+  const styleControl = document.getElementById("style-selector-control");
+
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
+
+  // Set the map's style to the initial value of the selector.
+  const styleSelector = document.getElementById("style-selector");
+
+  map.setOptions({
+    styles: styles[styleSelector.value]
+  });
+  // Apply new JSON when the user selects a different style.
+  styleSelector.addEventListener("change", () => {
+    map.setOptions({
+      styles: styles[styleSelector.value]
+    });
   });
 }
 
-initMap();
-    </script>
+const styles = {
+  default: [],
+  silver: [{
+      elementType: "geometry",
+      stylers: [{
+        color: "#f5f5f5"
+      }],
+    },
+    {
+      elementType: "labels.icon",
+      stylers: [{
+        visibility: "off"
+      }],
+    },
+    {
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#616161"
+      }],
+    },
+    {
+      elementType: "labels.text.stroke",
+      stylers: [{
+        color: "#f5f5f5"
+      }],
+    },
+    {
+      featureType: "administrative.land_parcel",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#bdbdbd"
+      }],
+    },
+    {
+      featureType: "poi",
+      elementType: "geometry",
+      stylers: [{
+        color: "#eeeeee"
+      }],
+    },
+    {
+      featureType: "poi",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#757575"
+      }],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "geometry",
+      stylers: [{
+        color: "#e5e5e5"
+      }],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#9e9e9e"
+      }],
+    },
+    {
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [{
+        color: "#ffffff"
+      }],
+    },
+    {
+      featureType: "road.arterial",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#757575"
+      }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry",
+      stylers: [{
+        color: "#dadada"
+      }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#616161"
+      }],
+    },
+    {
+      featureType: "road.local",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#9e9e9e"
+      }],
+    },
+    {
+      featureType: "transit.line",
+      elementType: "geometry",
+      stylers: [{
+        color: "#e5e5e5"
+      }],
+    },
+    {
+      featureType: "transit.station",
+      elementType: "geometry",
+      stylers: [{
+        color: "#eeeeee"
+      }],
+    },
+    {
+      featureType: "water",
+      elementType: "geometry",
+      stylers: [{
+        color: "#c9c9c9"
+      }],
+    },
+    {
+      featureType: "water",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#9e9e9e"
+      }],
+    },
+  ],
+  night: [{
+      elementType: "geometry",
+      stylers: [{
+        color: "#242f3e"
+      }]
+    },
+    {
+      elementType: "labels.text.stroke",
+      stylers: [{
+        color: "#242f3e"
+      }]
+    },
+    {
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#746855"
+      }]
+    },
+    {
+      featureType: "administrative.locality",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#d59563"
+      }],
+    },
+    {
+      featureType: "poi",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#d59563"
+      }],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "geometry",
+      stylers: [{
+        color: "#263c3f"
+      }],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#6b9a76"
+      }],
+    },
+    {
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [{
+        color: "#38414e"
+      }],
+    },
+    {
+      featureType: "road",
+      elementType: "geometry.stroke",
+      stylers: [{
+        color: "#212a37"
+      }],
+    },
+    {
+      featureType: "road",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#9ca5b3"
+      }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry",
+      stylers: [{
+        color: "#746855"
+      }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry.stroke",
+      stylers: [{
+        color: "#1f2835"
+      }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#f3d19c"
+      }],
+    },
+    {
+      featureType: "transit",
+      elementType: "geometry",
+      stylers: [{
+        color: "#2f3948"
+      }],
+    },
+    {
+      featureType: "transit.station",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#d59563"
+      }],
+    },
+    {
+      featureType: "water",
+      elementType: "geometry",
+      stylers: [{
+        color: "#17263c"
+      }],
+    },
+    {
+      featureType: "water",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#515c6d"
+      }],
+    },
+    {
+      featureType: "water",
+      elementType: "labels.text.stroke",
+      stylers: [{
+        color: "#17263c"
+      }],
+    },
+  ],
+  retro: [{
+      elementType: "geometry",
+      stylers: [{
+        color: "#ebe3cd"
+      }]
+    },
+    {
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#523735"
+      }]
+    },
+    {
+      elementType: "labels.text.stroke",
+      stylers: [{
+        color: "#f5f1e6"
+      }]
+    },
+    {
+      featureType: "administrative",
+      elementType: "geometry.stroke",
+      stylers: [{
+        color: "#c9b2a6"
+      }],
+    },
+    {
+      featureType: "administrative.land_parcel",
+      elementType: "geometry.stroke",
+      stylers: [{
+        color: "#dcd2be"
+      }],
+    },
+    {
+      featureType: "administrative.land_parcel",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#ae9e90"
+      }],
+    },
+    {
+      featureType: "landscape.natural",
+      elementType: "geometry",
+      stylers: [{
+        color: "#dfd2ae"
+      }],
+    },
+    {
+      featureType: "poi",
+      elementType: "geometry",
+      stylers: [{
+        color: "#dfd2ae"
+      }],
+    },
+    {
+      featureType: "poi",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#93817c"
+      }],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "geometry.fill",
+      stylers: [{
+        color: "#a5b076"
+      }],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#447530"
+      }],
+    },
+    {
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [{
+        color: "#f5f1e6"
+      }],
+    },
+    {
+      featureType: "road.arterial",
+      elementType: "geometry",
+      stylers: [{
+        color: "#fdfcf8"
+      }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry",
+      stylers: [{
+        color: "#f8c967"
+      }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry.stroke",
+      stylers: [{
+        color: "#e9bc62"
+      }],
+    },
+    {
+      featureType: "road.highway.controlled_access",
+      elementType: "geometry",
+      stylers: [{
+        color: "#e98d58"
+      }],
+    },
+    {
+      featureType: "road.highway.controlled_access",
+      elementType: "geometry.stroke",
+      stylers: [{
+        color: "#db8555"
+      }],
+    },
+    {
+      featureType: "road.local",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#806b63"
+      }],
+    },
+    {
+      featureType: "transit.line",
+      elementType: "geometry",
+      stylers: [{
+        color: "#dfd2ae"
+      }],
+    },
+    {
+      featureType: "transit.line",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#8f7d77"
+      }],
+    },
+    {
+      featureType: "transit.line",
+      elementType: "labels.text.stroke",
+      stylers: [{
+        color: "#ebe3cd"
+      }],
+    },
+    {
+      featureType: "transit.station",
+      elementType: "geometry",
+      stylers: [{
+        color: "#dfd2ae"
+      }],
+    },
+    {
+      featureType: "water",
+      elementType: "geometry.fill",
+      stylers: [{
+        color: "#b9d3c2"
+      }],
+    },
+    {
+      featureType: "water",
+      elementType: "labels.text.fill",
+      stylers: [{
+        color: "#92998d"
+      }],
+    },
+  ],
+  hiding: [{
+      featureType: "poi.business",
+      stylers: [{
+        visibility: "off"
+      }],
+    },
+    {
+      featureType: "transit",
+      elementType: "labels.icon",
+      stylers: [{
+        visibility: "off"
+      }],
+    },
+  ],
+};
 
+window.initMap = initMap;
+</script>
 </body>
 
 </html>
