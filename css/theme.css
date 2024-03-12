@@ -736,7 +736,7 @@ nav.navbar-default {
 }
 
 nav.navbar-sticked {
-    background-color: #232529;
+    background-color: #2325297a;
 }
 
 nav.navbar-sticked .navigation-top > ul {
@@ -752,7 +752,7 @@ nav .navigation {
 nav .navigation ul,
 nav .navigation ul li {
     margin: 0;
-    padding: 0;
+    padding: 3px;
 }
 
 nav .navigation ul li {
