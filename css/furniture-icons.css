@@ -25,19 +25,19 @@
     display: inline-block;
 }
 
-.f-icon-dining-table:before {
+.f-icon-diningroom:before {
     content: "\e900";
 }
 
-.f-icon-accessories:before {
+.f-icon-decor:before {
     content: "\e901";
 }
 
-.f-icon-armchair:before {
+.f-icon-recliner:before {
     content: "\e902";
 }
 
-.f-icon-bar-set:before {
+.f-icon-bar:before {
     content: "\e903";
 }
 
@@ -53,7 +53,7 @@
     content: "\e906";
 }
 
-.f-icon-carpet:before {
+.f-icon-rug:before {
     content: "\e907";
 }
 
@@ -69,11 +69,11 @@
     content: "\e90a";
 }
 
-.f-icon-lightning:before {
+.f-icon-lighting:before {
     content: "\e90b";
 }
 
-.f-icon-media-cabinet:before {
+.f-icon-tvstand:before {
     content: "\e90c";
 }
 
@@ -81,7 +81,7 @@
     content: "\e90d";
 }
 
-.f-icon-office:before {
+.f-icon-desk:before {
     content: "\e90e";
 }
 
@@ -93,7 +93,7 @@
     content: "\e910";
 }
 
-.f-icon-sofa:before {
+.f-icon-livingroom:before {
     content: "\e911";
 }
 
@@ -101,6 +101,6 @@
     content: "\e912";
 }
 
-.f-icon-wardrobe:before {
+.f-icon-armoire:before {
     content: "\e913";
 }

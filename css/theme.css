@@ -1788,7 +1788,7 @@ nav .cart-wrapper.open {
     width: 100%;
     color: #ffd957;
     text-shadow: -5px 5px 4px black;
-    top: 30%;
+    top: 80%;
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
@@ -2276,18 +2276,18 @@ nav .cart-wrapper.open {
     ----------------------------------
 */
 .products {
-    background-color:#242f3e;
+    background-color:#666666;
 }
 
 .products .box-filters {
     text-align: center;
-    padding: 40px 0 0;
+    padding: 20px 0 0;
 }
 
 .products .box-filters figure {
-    width: 70px;
-    height: 70px;
-    display: inline-block;
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
     padding: 10px;
     background-color: white;
     color: #666666;
@@ -2295,23 +2295,27 @@ nav .cart-wrapper.open {
     -webkit-border-radius: 100%;
     border-radius: 100%;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 10px 10px;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .products .box-filters figure.active {
-    background-color: #3a3d45;
+    background-color: #ffbb00;
     color: #666666;
 }
 
 .products .box-filters figure .f-icon {
-    display: block;
-    font-size: 38px;
-    line-height: 27px;
+    display: inline-flex;
+    font-size: 68px;
+    line-height: 50px;
 }
 
 @media (min-width: 992px) {
