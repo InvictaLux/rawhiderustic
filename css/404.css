@@ -7,16 +7,18 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-image:url(officebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 
 .error404page {
-    width: 400px;
-    height: 800px;
+    width: 125px;
+    height: 250px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 55%;
+    left: 40%;
     transform: translate(-50%, -50%);
 }
 
@@ -30,7 +32,7 @@ body {
 .rightshoe404,
 .legs404,
 .laptop404 {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15979/404-character-new.png)
+    background: url(404-character-me.png)
         0 0 no-repeat;
     width: 200px;
     height: 200px;
@@ -96,9 +98,9 @@ $swayspeed: 20s;
 
 .eyes404 {
     position: absolute;
-    top: 92px;
+    top: 85px;
     left: 34px;
-    width: 73px;
+    width: 70px;
     height: 18px;
     background-position: -162px -350px;
     animation: blink404 10s steps(1) infinite, pan 10s ease-in-out infinite;
