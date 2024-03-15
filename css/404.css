@@ -32,7 +32,7 @@ body {
 .rightshoe404,
 .legs404,
 .laptop404 {
-    background: url(404-character-me.png)
+    background: url(404-character-cow.png)
         0 0 no-repeat;
     width: 200px;
     height: 200px;
@@ -56,10 +56,10 @@ body {
 }
 
 .newcharacter404 {
-    width: 400px;
+    width: 200px;
     height: 800px;
     left: 50%;
-    top: 20px;
+    top: 40px;
     margin-left: -200px;
 }
 
@@ -87,8 +87,8 @@ $swayspeed: 20s;
 
 .head404 {
     position: absolute;
-    top: -148px;
-    left: 106px;
+    top: -140px;
+    left: 96px;
     width: 160px;
     height: 194px;
     background-position: 0px -265px;
@@ -98,8 +98,8 @@ $swayspeed: 20s;
 
 .eyes404 {
     position: absolute;
-    top: 85px;
-    left: 34px;
+    top: 69px;
+    left: 40px;
     width: 70px;
     height: 18px;
     background-position: -162px -350px;
