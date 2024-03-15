@@ -193,25 +193,12 @@
                                   </figcaption>
                                  </figure>
 
-                                <figure data-filter=".table">
-                                  <figcaption>
-                                      <i class="f-icon f-icon-table"></i>
-                                      <span>Table</span>
-                                  </figcaption>
-                                </figure>
-                            
+                           
                                 <figure data-filter=".bar">
                                   <figcaption>
                                       <i class="f-icon f-icon-bar"></i>
                                       <span>Bar</span>
                                   </figcaption>
-                               </figure>
-
-                               <figure data-filter=".rug">
-                                <figcaption>
-                                    <i class="f-icon f-icon-rug"></i>
-                                    <span>Rug</span>
-                                </figcaption>
                                </figure>
 
                                <figure data-filter=".kitchen">
@@ -220,13 +207,6 @@
                                     <span>Kitchen</span>
                                 </figcaption>
                                </figure>
-
-                              <figure data-filter=".tvstand">
-                                <figcaption>
-                                  <i class="f-icon f-icon-tvstand"></i>
-                                  <span>TV Stand</span>
-                                </figcaption>
-                              </figure>
 
                             </div> <!--/box-filters-->
 
@@ -237,6 +217,7 @@
                 <div id="box-filters-results" class="row">
 
                     <!-- === product-item === -->
+
                     <script>
                         fetch('https://script.google.com/macros/s/AKfycbxxucemfZth7E649ymIlDXvW4Xg1ba57j6XUwEgonrSYlcn3HwS1XPrAMsEckwlB-Eq/exec')
                             .then(response => response.json())
@@ -250,12 +231,12 @@
                                     let productCategory = item.productCategory;
                     
                                     let productHTML = `
-                                        <div class="col-md-12" data-category="${productCategory}">
+                                        <div class="col-xs-6 col-sm-4 item ${productCategory}">
                                             <article>
                                                 <div class="figure-grid">
                                                     <div class="image">
-                                                        <a href="${productId}" class="mfp-open">
-                                                            <img src="${productImage}" alt="" width="360" />
+                                                        <a href="#productid${productId}" class="mfp-open">
+                                                            <img src="assets/images/product-1.png" alt="" width="360" />
                                                         </a>
                                                     </div>
                                                     <div class="text">

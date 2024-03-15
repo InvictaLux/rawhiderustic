@@ -1,5 +1,3 @@
-
-    <script>
         fetch('https://script.google.com/macros/s/AKfycbw4_Xv1eSwj_dTDBl0KMi5pM8N-5PtNxqo1XW1VHOIFK502ZFBc8nog5PzTSWXsmbsY/exec')
             .then(response => response.json())
             .then(data => {
@@ -34,4 +32,3 @@
                 });
             })
             .catch(error => console.error('Error fetching JSON data:', error));
-    </script>
